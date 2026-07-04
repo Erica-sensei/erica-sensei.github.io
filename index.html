@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アプリひろば</title>
+<style>
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh;
+    font-family:"Hiragino Maru Gothic ProN","ヒラギノ丸ゴ ProN W4","BIZ UDGothic",sans-serif;
+    background:linear-gradient(160deg,#FFF3E0,#E8F5E9);
+    display:flex; flex-direction:column; align-items:center; padding:24px 16px;
+  }
+  h1{ color:#5D4037; font-size:clamp(26px,6vw,40px); margin:16px 0 4px; text-align:center; }
+  p.sub{ color:#8D6E63; font-size:16px; margin:0 0 28px; text-align:center; }
+  .grid{ display:flex; flex-wrap:wrap; gap:20px; justify-content:center; max-width:900px; }
+  a.card{
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    width:260px; padding:28px 20px; background:#fff; border-radius:24px;
+    border:4px solid #FFCC80; text-decoration:none; color:#5D4037;
+    box-shadow:0 6px 16px rgba(0,0,0,.12); transition:transform .15s;
+  }
+  a.card:hover{ transform:translateY(-4px); border-color:#FF9800; }
+  .card .icon{ font-size:64px; line-height:1; }
+  .card .name{ font-size:22px; font-weight:bold; }
+  .card .desc{ font-size:14px; color:#8D6E63; text-align:center; line-height:1.5; }
+  footer{ margin-top:auto; padding-top:32px; color:#A1887F; font-size:12px; }
+</style>
+</head>
+<body>
+  <h1>🌈 アプリひろば</h1>
+  <p class="sub">つかいたい アプリを タップしてね</p>
+  <div class="grid">
+    <a class="card" href="https://erica-sensei.github.io/happyo-maker/">
+      <span class="icon">🐞</span>
+      <span class="name">はっぴょうメーカー</span>
+      <span class="desc">かんさつしたことを<br>スライドに して はっぴょうしよう</span>
+    </a>
+    <a class="card" href="https://erica-sensei.github.io/kamishibai-maker/">
+      <span class="icon">📖</span>
+      <span class="name">かみしばいメーカー</span>
+      <span class="desc">えを かいて じぶんだけの<br>かみしばいを つくろう</span>
+    </a>
+    <a class="card" href="https://erica-sensei.github.io/ohanashi-sansu/">
+      <span class="icon">🔢</span>
+      <span class="name">おはなしさんすう</span>
+      <span class="desc">おはなしを よみながら<br>さんすうの もんだいに チャレンジ</span>
+    </a>
+  </div>
+  <footer>© Erica-sensei</footer>
+</body>
+</html>
